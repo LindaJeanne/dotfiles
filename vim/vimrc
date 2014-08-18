@@ -1,0 +1,65 @@
+set nocompatible
+set encoding=utf8
+
+" Automatically re-read a file that's been changed by another program
+set autoread
+
+"In normal and visual mode, map space bar to the colon
+" noremap <Space> :
+" vnomap <Space>:
+
+set ruler
+set cmdheight=2
+set laststatus=2
+"set showcmd
+
+
+
+
+set backspace=eol,start,indent
+set whichwrap+=<,>,h,l,b,[,]
+"inoremap <Down> <C-o>gj
+"inoremap <Up> <C-o>gk
+
+
+"Searching
+set ignorecase
+set smartcase
+set hlsearch
+"nnoremap <esc> :noh
+set magic
+set noincsearch
+
+
+
+
+
+set showmatch
+
+
+set mouse=a
+
+set noerrorbells
+set visualbell
+
+
+syntax enable
+filetype on
+filetype plugin on
+colorscheme desert
+set background=dark
+
+set smarttab
+set shiftwidth=3
+set tabstop=3
+set softtabstop=3
+set autoindent
+set smartindent
+
+
+" if has("gui_running")
+"    colorscheme x
+"    set guifont=y
+" else
+"    colorscheme z
+" endif
