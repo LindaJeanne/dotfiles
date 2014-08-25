@@ -17,7 +17,7 @@ fi
 
 # Put your fun stuff here.
 
-export PATH=$PATH:/data/bin:~/bin:/sbin/usr/sbin:/usr/local/sbin
+export PATH=$PATH:/data/bin:~/bin:/sbin:/usr/sbin:/usr/local/sbin
 
 export EDITOR="vim"
 export AWESOME_BG_IMG="/data/resources/wallpaper/gabe/monts05.jpg"
