@@ -160,7 +160,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
-		  tray_output none
+		  tray_output primary
 		  binding_mode_indicator yes
 }
 
@@ -238,8 +238,6 @@ bindsym $mod+$alt+Space exex mode_toggle
 	exec feh --bg-scale /data/resources/wallpaper/gabe/montouris_cropped.jpg
 
 	exec terminator -fb --layout=quaketerm --role=quaketerm --working-directory ~
-
-#	exec xfce4-panel
 
 	exec dropbox
 	
