@@ -160,11 +160,12 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
-		  tray_output primary
+		  tray_output DVI-D-1
 		  binding_mode_indicator yes
 }
 
 
+		  font pango:DejaVu Sans 10
 # ==========================================================
 # Custom configuration 
 # ==========================================================
@@ -241,7 +242,7 @@ bindsym $mod+$alt+Space exex mode_toggle
 
 	exec dropbox
 	
-	exec redshift -l -45.5:71.0
+	exec redshift -l 45.5:-71.0 -t 6500:3700
 
 # ==========================================================
 # Zenity menus
