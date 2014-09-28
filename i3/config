@@ -166,6 +166,13 @@ bar {
 
 
 		  font pango:DejaVu Sans 10
+
+
+#Make the volume keys on the keyboard work
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
+bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
+bindsym XF86AudoMute exec amixer set Master toggle
+
 # ==========================================================
 # Custom configuration 
 # ==========================================================
