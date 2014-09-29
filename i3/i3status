@@ -9,6 +9,9 @@
 general {
         colors = true
         interval = 5
+		  color_good = "#3F704A"
+		  color_degraded =  "#634E37"
+		  color_bad = "#946D6D"
 }
 
 order += "volume master"
@@ -45,7 +48,7 @@ cpu_usage {
 }
 
 time {
-        format = "%Y-%m-%d %H:%M:%S"
+        format = "%Y-%m-%d | %H:%M | %S"
 }
 
 load {
