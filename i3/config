@@ -206,21 +206,13 @@ bindsym $mod+$alt+p bar mode toggle
 #toggles focus between floating/tiling containers
 bindsym $mod+$alt+Space exex mode_toggle 
 #
-# Mod-Alt-W opens a menu of webpages to launch:
-#
-#
-# Mod-Alt-A opens a menu of activities to set up:
-#
-#
-# Mod-Alt-P opens a menu of other prograpms
-#
-#
-# Mod-Alt-G opens a menu of games.
-#
-#
-#
-# Utilities workspace with music, to-do, and gmail
-#
+
+bindsym $mod+$alt+t exec treesheets
+
+
+
+
+
 # ==========================================================
 # Program Settings
 # ==========================================================
@@ -254,6 +246,3 @@ bindsym $mod+$alt+Space exex mode_toggle
 	
 	exec redshift -l 45.5:-71.0 -t 6500:3700
 
-# ==========================================================
-# Zenity menus
-# ==========================================================
