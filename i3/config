@@ -203,8 +203,9 @@ bindsym $mod+$alt+m exec gksudo /etc/portage/make.conf
 bindsym $mod+$alt+i exec gvim /data/dotfiles/i3/config
 bindsym $mod+$alt+g exec cd /data/dotfiles/git && vim -gp gitconfig gitignore
 bindsym $mod+$alt+p bar mode toggle
+bindsym $mod+$alt+c exec clementine
 #toggles focus between floating/tiling containers
-bindsym $mod+$alt+Space exex mode_toggle 
+bindsym $mod+$alt+Space exec mode_toggle 
 #
 
 bindsym $mod+$alt+t exec treesheets
