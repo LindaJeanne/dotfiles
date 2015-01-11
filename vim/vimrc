@@ -66,9 +66,7 @@ autocmd BufEnter * colorscheme desert
 autocmd BufEnter *.php colorscheme twilight
 autocmd BufEnter *.py colorscheme Tomorrow-Night
 
-" if has("gui_running")
-"    colorscheme x
-"    set guifont=y
-" else
-"    colorscheme z
-" endif
+if has("gui_running")
+	set guifont=DejaVu\ Sans\ Mono\ 12
+endif
+
