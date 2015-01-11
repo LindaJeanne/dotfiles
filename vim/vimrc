@@ -70,3 +70,7 @@ if has("gui_running")
 	set guifont=Input\ 12
 endif
 
+set statusline=%n:%t "Buffer Number and file name
+set statusline+=%m%r%h%w%y "Flags
+set statusline+=%{fugitive#statusline()}%=
+set statusline+=%b,x%B\ .\ %l,%L\ .\ %c
