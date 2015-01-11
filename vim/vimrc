@@ -67,6 +67,6 @@ autocmd BufEnter *.php colorscheme twilight
 autocmd BufEnter *.py colorscheme Tomorrow-Night
 
 if has("gui_running")
-	set guifont=Andale\ Mono\ 12
+	set guifont=Input\ 12
 endif
 
