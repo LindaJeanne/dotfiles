@@ -24,11 +24,11 @@ set whichwrap+=<,>,h,l,b,[,]
 
 "Searching
 set ignorecase
+set incsearch
 set smartcase
 set hlsearch
-"nnoremap <esc> :noh
+nnoremap <esc> :noh<CR>
 set magic
-set noincsearch
 
 
 
@@ -46,8 +46,6 @@ set visualbell
 syntax enable
 filetype on
 filetype plugin on
-colorscheme desert
-set background=dark
 
 set smarttab
 set shiftwidth=3
@@ -56,6 +54,17 @@ set softtabstop=3
 set autoindent
 set smartindent
 
+let NERDMenuMode="2"
+
+autocmd VimEnter * nested :call tagbar#autoopen(1)
+autocmd FileType * nested :call tagbar#autoopen(0)
+autocmd BufEnter * nested :call tagbar#autoopen(0)
+
+colorscheme desert
+set background=dark
+autocmd BufEnter * colorscheme desert
+autocmd BufEnter *.php colorscheme twilight
+autocmd BufEnter *.py colorscheme Tomorrow-Night
 
 " if has("gui_running")
 "    colorscheme x

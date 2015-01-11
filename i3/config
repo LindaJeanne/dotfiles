@@ -201,7 +201,7 @@ bindsym $mod+$alt+v exec gvim
 bindsym $mod+$alt+b exec gvim /data/dotfiles/bash/bashrc
 bindsym $mod+$alt+m exec gksudo /etc/portage/make.conf
 bindsym $mod+$alt+i exec gvim /data/dotfiles/i3/config
-bindsym $mod+$alt+g exec cd /data/dotfiles/git && vim -gp gitconfig gitignore
+bindsym $mod+$alt+g exec cd /data/dotfiles/git && gvim -gp gitconfig gitignore
 bindsym $mod+$alt+p bar mode toggle
 bindsym $mod+$alt+c exec clementine
 #toggles focus between floating/tiling containers
@@ -223,17 +223,6 @@ bindsym $mod+$alt+t exec treesheets
 	for_window [window_role="quaketerm"] move scratchpad
 	bindsym F12 scratchpad show
 
-# For minecraft, remove the window border/titlebar, and hide the i3bar, but keep the xfce-4 panel at the top
-# so that I can see what time it is.
-
-	for_window [title="Minecraft"] move 9:M 
-	for_window [title="Minecraft"] border none
-
-	for_window [class="bubblemon"] floating enable
-
-#
-# Conky: Desktop, non-focusable
-#
 # Keyboard command to hide the bottom bar	
 # ==========================================================
 # To start on launch
@@ -243,7 +232,7 @@ bindsym $mod+$alt+t exec treesheets
 
 	exec terminator -fb --layout=quaketerm --role=quaketerm --working-directory ~
 
-	exec dropbox
+	#exec dropbox
 	
 	exec redshift -l 45.5:-71.0 -t 6500:3700
 

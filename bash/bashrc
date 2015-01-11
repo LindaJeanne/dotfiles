@@ -18,7 +18,7 @@ fi
 # Put your fun stuff here.
 
 export PATH=$PATH:/data/bin:~/bin:/sbin:/usr/sbin:/usr/local/sbin
-
+export PYTHONPATH=$PYTHONPATH:/data/lib/py
 export EDITOR="vim"
 export AWESOME_BG_IMG="/data/resources/wallpaper/gabe/monts05.jpg"
 export TERM="xterm-256color"
@@ -27,6 +27,8 @@ export TERM="xterm-256color"
 
 alias ls="ls -h --color"
 alias makeconf="sudo vim /etc/portage/make.conf"
+alias greppy=grep_py_files
+alias grephp=grep_php_files
 
 
 
@@ -117,4 +119,14 @@ function command_prompt {
 
 export PS1=$(command_prompt)
 
+#=========================================
+# Functions
+#=========================================
 
+grep_py_files() {
+	grep -n $1 *.py */*.py
+}
+
+grep_php_files() {
+	grep -n $1 *.php */*.php *.module */*.module
+}
