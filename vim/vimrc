@@ -44,12 +44,13 @@ filetype plugin indent on
 set autoread
 
 "In normal and visual mode, map space bar to the colon
-" noremap <Space> :
-" vnomap <Space>:
+noremap <Space> :
+vmap <Space>:
 
 set ruler
 set cmdheight=2
 set laststatus=2
+set number
 "set showcmd
 
 
@@ -68,19 +69,11 @@ set smartcase
 set hlsearch
 nnoremap <esc> :noh<CR>
 set magic
-
-
-
-
-
 set showmatch
 
-
 set mouse=a
-
 set noerrorbells
 set visualbell
-
 
 syntax enable
 filetype on
