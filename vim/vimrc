@@ -1,6 +1,45 @@
 set nocompatible
 set encoding=utf8
 
+" Set up Vundle ==========================================
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'tpope/vim-fugitive'
+Plugin 'majutsushi/tagbar'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'scrooloose/syntastic'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-eunuch'
+Plugin 'tmhedberg/simpylfold'
+
+" Colorschemes
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'AlessandroYorba/Alduin'
+Plugin 'jansenfuller/crayon'
+Plugin 'fcpg/vim-fahrenheit'
+Plugin 'romainl/flattened'
+Plugin 'YorickPeterse/happy_hacking.vim'
+Plugin 'marlun/vim-starwars'
+Plugin 'jeetsukumaran/vim-nefertiti'
+Plugin 'vim-scripts/neutron.vim'
+Plugin 'ninja/sky'
+Plugin 'http://www.vim.org/scripts/download_script.php?src_id=20788' " freya
+Plugin 'http://www.vim.org/scripts/download_script.php?src_id=807'   " camo
+Plugin 'http://www.vim.org/scripts/download_script.php?src_id=10496' " twilight
+Plugin 'kreeger/benlight'
+
+call vundle#end()
+filetype plugin indent on
+" End of Vundle section ===================================
+
+
 " Automatically re-read a file that's been changed by another program
 set autoread
 
@@ -14,7 +53,7 @@ set laststatus=2
 "set showcmd
 
 
-
+"
 
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l,b,[,]
@@ -62,12 +101,12 @@ autocmd BufEnter * nested :call tagbar#autoopen(0)
 
 colorscheme desert
 set background=dark
-autocmd BufEnter * colorscheme desert
-autocmd BufEnter *.php colorscheme twilight
-autocmd BufEnter *.py colorscheme Tomorrow-Night
+"autocmd BufEnter * colorscheme desert
+"autocmd BufEnter *.php colorscheme twilight
+"autocmd BufEnter *.py colorscheme Tomorrow-Night
 
 if has("gui_running")
-	set guifont=Input\ 12
+	set guifont=Inconsolata\ 14
 endif
 
 set statusline=%n:%t "Buffer Number and file name
