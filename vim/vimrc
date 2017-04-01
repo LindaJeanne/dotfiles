@@ -19,6 +19,16 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-eunuch'
 Plugin 'tmhedberg/simpylfold'
 
+Plugin 'klen/python-mode'
+Plugin 'a.vim'
+Plugin 'octol/vim-cpp-enhanced-highlight'
+" Plugin 'chiel92/vim-autoformat'
+" Plugin 'octol/vim-cpp-enhanced-highlight'
+" Plugin 'hynek/vim-python-pep8-indent' python indenting
+" Plugin 'tmhedberg/simpylfold' " python folding
+" Plugin 'wolfgangmehner/c.vim' 
+" Plugin 'valloric/youcompleteme' 
+"
 " Colorschemes
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'AlessandroYorba/Alduin'
@@ -30,9 +40,6 @@ Plugin 'marlun/vim-starwars'
 Plugin 'jeetsukumaran/vim-nefertiti'
 Plugin 'vim-scripts/neutron.vim'
 Plugin 'ninja/sky'
-Plugin 'http://www.vim.org/scripts/download_script.php?src_id=20788' " freya
-Plugin 'http://www.vim.org/scripts/download_script.php?src_id=807'   " camo
-Plugin 'http://www.vim.org/scripts/download_script.php?src_id=10496' " twilight
 Plugin 'kreeger/benlight'
 
 call vundle#end()
@@ -44,8 +51,8 @@ filetype plugin indent on
 set autoread
 
 "In normal and visual mode, map space bar to the colon
-noremap <Space> :
-vmap <Space>:
+"noremap <Space> :
+"vmap <Space>:
 
 set ruler
 set cmdheight=2
