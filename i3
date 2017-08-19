@@ -198,21 +198,35 @@ bindsym $mod+$alt+f exec firefox -new-window
 bindsym $mod+$alt+h exec firefox -new-window http://i3wm.org/docs/userguide.html -new-tab http://i3wm.org/docs/refcard.html
 bindsym $mod+$alt+e exec gksu shutdown -h now
 bindsym $mod+$alt+v exec gvim
-bindsym $mod+$alt+b exec gvim /data/dotfiles/bash/bashrc
-bindsym $mod+$alt+m exec gksudo /etc/portage/make.conf
-bindsym $mod+$alt+i exec gvim /data/dotfiles/i3/config
-bindsym $mod+$alt+g exec cd /data/dotfiles/git && gvim -gp gitconfig gitignore
+bindsym $mod+$alt+b exec gvim ~/dotfiles/bash/bashrc
+# bindsym $mod+$alt+m exec gksudo /etc/portage/make.conf
+bindsym $mod+$alt+i exec gvim ~/dotfiles/i3/config
+bindsym $mod+$alt+g exec cd ~/dotfiles/git && gvim -gp gitconfig gitignore
 bindsym $mod+$alt+p bar mode toggle
-bindsym $mod+$alt+c exec clementine
+# bindsym $mod+$alt+c exec clementine
 #toggles focus between floating/tiling containers
 bindsym $mod+$alt+Space exec mode_toggle 
 #
 
-bindsym $mod+$alt+t exec treesheets
+# bindsym $mod+$alt+t exec treesheets
 
 
 
 
+
+
+# Keyboard command to hide the bottom bar	
+# ==========================================================
+# To start on launch
+# ==========================================================
+
+	exec feh --bg-scale ~/resources/wallpaper/gabe/montouris_cropped.jpg
+
+	exec terminator -fb --layout=quaketerm --role=quaketerm --working-directory ~
+
+	#exec dropbox
+	
+	exec redshift -l 45.5:-71.0 -t 6500:5000
 
 # ==========================================================
 # Program Settings
@@ -222,17 +236,3 @@ bindsym $mod+$alt+t exec treesheets
 
 	for_window [window_role="quaketerm"] move scratchpad
 	bindsym F12 scratchpad show
-
-# Keyboard command to hide the bottom bar	
-# ==========================================================
-# To start on launch
-# ==========================================================
-
-	exec feh --bg-scale /data/resources/wallpaper/gabe/montouris_cropped.jpg
-
-	exec terminator -fb --layout=quaketerm --role=quaketerm --working-directory ~
-
-	#exec dropbox
-	
-	exec redshift -l 45.5:-71.0 -t 6500:3700
-

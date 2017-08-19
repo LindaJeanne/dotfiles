@@ -95,9 +95,9 @@ set smartindent
 
 let NERDMenuMode="2"
 
-autocmd VimEnter * nested :call tagbar#autoopen(1)
-autocmd FileType * nested :call tagbar#autoopen(0)
-autocmd BufEnter * nested :call tagbar#autoopen(0)
+"autocmd VimEnter * nested :call tagbar#autoopen(1)
+"autocmd FileType * nested :call tagbar#autoopen(0)
+"autocmd BufEnter * nested :call tagbar#autoopen(0)
 
 colorscheme desert
 set background=dark

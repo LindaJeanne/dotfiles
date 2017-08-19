@@ -85,3 +85,7 @@ export PS1="$color_dk_yellow\w$color_end$color_dk_green \$$color_end"
 #grep_php_files() {
 #	grep -n $1 *.php */*.php *.module */*.module
 #}
+export LANG=en_US.utf8
+
+alias ls='ls --color'
+
