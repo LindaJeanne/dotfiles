@@ -159,7 +159,8 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status -c ~/.config/i3status
+        # status_command i3status -c /home/lindajeanne/.config/i3status
+        status_command i3status
 		  tray_output DVI-D-1
 		  binding_mode_indicator yes
 		  colors {
