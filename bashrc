@@ -89,3 +89,26 @@ export LANG=en_US.utf8
 
 alias ls='ls --color'
 
+alias pkexec='pkexec env DISPLAY=:0 XAUTHORITY=/home/lindajeanne/.Xauthority'
+
+# ========================================
+# rclone
+# ========================================
+
+
+alias gref-check="rclone check ~/drives/gdrive-reference gdrive:/my-reference"
+
+alias gref-up="rclone sync ~/drives/gdrive-reference gdrive:/my-reference"
+
+alias gref-down="rclone sync gdrive:/my-reference ~/drives/gdrive-reference"
+
+
+# ===========================================
+# TMSU
+# ===========================================
+
+tmsuReplace() {
+	tmsu tag $1 $3
+	tmsu untag $1 $2
+	tmsu tags $1
+}
