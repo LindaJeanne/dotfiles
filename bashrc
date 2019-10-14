@@ -17,7 +17,8 @@ fi
 
 # Put your fun stuff here.
 
-export PATH=$PATH:~/bin:/sbin:/usr/sbin:/usr/local/sbin
+export PATH=$PATH:~/bin:/sbin:/usr/sbin:/usr/local/sbin:/home/lindajeanne/.gem/ruby/2.5.0/bin
+
 #export PYTHONPATH=$PYTHONPATH:/data/lib/py
 export EDITOR="vim"
 #export AWESOME_BG_IMG="/data/resources/wallpaper/gabe/monts05.jpg"
