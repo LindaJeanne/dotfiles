@@ -99,9 +99,9 @@ alias pkexec='pkexec env DISPLAY=:0 XAUTHORITY=/home/lindajeanne/.Xauthority'
 
 alias gref-check="rclone check ~/drives/gdrive-reference gdrive:/my-reference"
 
-alias gref-up="rclone sync ~/drives/gdrive-reference gdrive:/my-reference"
+alias gref-up="rclone sync --bwlimit 1M ~/drives/gdrive-reference gdrive:/my-reference"
 
-alias gref-down="rclone sync gdrive:/my-reference ~/drives/gdrive-reference"
+alias gref-down="rclone sync --bwlimit 1M gdrive:/my-reference ~/drives/gdrive-reference"
 
 
 # ===========================================

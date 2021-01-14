@@ -1,0 +1,7 @@
+[gdrive]
+type = drive
+scope = drive
+token = {"access_token":"ya29.a0AfH6SMCWM71L8N_o3sv1ooX5WZz4pe3Ny1M7UZO7Xee3kJ5eHC2ynI-JZvdFeqSCbFp9ufiPRqBAUVNHM4HpUMr4NF2obBE7irKcl2lqsWq-IZ6btScpFu97_zoLRMuutjNhni3gFs1qyRhQyeN04Q7a1ev1QbnMSzb6jGUz8fc","token_type":"Bearer","refresh_token":"1//0dgg1HakF3GuBCgYIARAAGA0SNwF-L9IrBNmeHnvOQI2xoCYjJhpCb-y1bWIRDVq1dbHcsTHCdFeinhznXS2MUE1P7V8t7EGEL0k","expiry":"2021-01-11T14:43:08.635312742-05:00"}
+client_id = 255506174297-9helf5k7jidh05rcgvo47dja5e5orqgb.apps.googleusercontent.com
+client_secret = jlOyjBAvfrsDF4KyVjoP6hUD
+

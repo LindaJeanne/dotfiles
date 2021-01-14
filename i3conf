@@ -14,12 +14,19 @@ set $alt Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
-font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+# font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # The font above is very space-efficient, that is, it looks good, sharp and
 # clear in small sizes. However, if you need a lot of unicode glyphs or
 # right-to-left text rendering, you should instead use pango for rendering and
 # chose a FreeType font, such as:
 # font pango:DejaVu Sans Mono 10
+font pango:Monofur Reguar 12
+
+
+# The above is only chaning the bar, and not the titles. 
+# This is a bit of a hacky wat to try to get it to apply to the windows, too.
+
+for_window [class=".*"] title_format "<span font='Monofur Bold 12'> %title</span>"
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -31,7 +38,10 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+#bindsym $mod+d exec dmenu_run
+#bindsym $mod+d exec dmenu_run -fn 'pango:DejaVu Sans Mono 10'
+bindsym $mod+d exec dmenu_run -fn 'pango:Monofu Regular 12'
+
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -159,9 +169,8 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        # status_command i3status -c /home/lindajeanne/.config/i3status
-        status_command i3status
-		  tray_output DVI-D-1
+        status_command i3status --config ~/dotfiles/i3status
+		  #tray_output DVI-D-0
 		  binding_mode_indicator yes
 		  colors {
 			background #111111
@@ -203,6 +212,7 @@ bindsym $mod+$alt+b exec gvim ~/dotfiles/bash/bashrc
 # bindsym $mod+$alt+m exec gksudo /etc/portage/make.conf
 bindsym $mod+$alt+i exec gvim ~/dotfiles/i3/config
 bindsym $mod+$alt+g exec cd ~/dotfiles/git && gvim -gp gitconfig gitignore
+# Keyboard command to hide the bottom bar	
 bindsym $mod+$alt+p bar mode toggle
 # bindsym $mod+$alt+c exec clementine
 #toggles focus between floating/tiling containers
@@ -216,18 +226,22 @@ bindsym $mod+$alt+Space exec mode_toggle
 
 
 
-# Keyboard command to hide the bottom bar	
 # ==========================================================
 # To start on launch
 # ==========================================================
 
-	exec feh --bg-scale /home/data-drive/resources/wallpaper/gabe/montouris_cropped.jpg
+	exec feh --bg-scale /home/lindajeanne/drives/data-drive/resources/wallpaper/gabe/montouris_cropped.jpg
 
 	exec terminator -fb --layout=quaketerm --role=quaketerm --working-directory ~
 
-	#exec dropbox
+	exec dropbox start
 	
-	exec redshift -l 45.5:-71.0 -t 6500:5000
+	# exec redshift -l 43.5:-72.0 -t 5000:2000
+	exec redshift -c
+
+	exec nm-tray
+
+	exec flameshot
 
 # ==========================================================
 # Program Settings

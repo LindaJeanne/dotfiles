@@ -1,2 +1,4 @@
-xmodmap ~/.xmodmaprc && exec i3
+xmodmap ~/.xmodmaprc
+PATH=$PATH:$HOME/bin
+exec i3
 
