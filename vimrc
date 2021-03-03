@@ -22,6 +22,7 @@ Plugin 'tmhedberg/simpylfold'
 Plugin 'klen/python-mode'
 Plugin 'a.vim'
 Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'chrisbra/Colorizer'
 " Plugin 'chiel92/vim-autoformat'
 " Plugin 'octol/vim-cpp-enhanced-highlight'
 " Plugin 'hynek/vim-python-pep8-indent' python indenting

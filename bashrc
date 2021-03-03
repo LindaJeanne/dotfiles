@@ -92,6 +92,8 @@ alias ls='ls --color'
 
 alias pkexec='pkexec env DISPLAY=:0 XAUTHORITY=/home/lindajeanne/.Xauthority'
 
+alias pingg= 'ping 8.8.8.8'
+
 # ========================================
 # rclone
 # ========================================
@@ -103,6 +105,7 @@ alias gref-up="rclone sync --bwlimit 1M ~/drives/gdrive-reference gdrive:/my-ref
 
 alias gref-down="rclone sync --bwlimit 1M gdrive:/my-reference ~/drives/gdrive-reference"
 
+alias gref-hash="rclone -vv check ~/drives/gdrive-reference gdrive:/my-reference | grep hash"
 
 # ===========================================
 # TMSU
@@ -112,4 +115,5 @@ tmsuReplace() {
 	tmsu tag $1 $3
 	tmsu untag $1 $2
 	tmsu tags $1
+	A
 }
