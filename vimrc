@@ -29,6 +29,8 @@ Plugin 'chrisbra/Colorizer'
 " Plugin 'tmhedberg/simpylfold' " python folding
 " Plugin 'wolfgangmehner/c.vim' 
 " Plugin 'valloric/youcompleteme' 
+Plugin 'habamax/vim-godot'
+Plugin 'dense-analysis/ale'
 "
 " Colorschemes
 Plugin 'altercation/vim-colors-solarized'
@@ -114,3 +116,22 @@ set statusline=%n:%t "Buffer Number and file name
 set statusline+=%m%r%h%w%y "Flags
 set statusline+=%{fugitive#statusline()}%=
 set statusline+=%b,x%B\ .\ %l,%L\ .\ %c
+
+" -----------
+" Configure ALE to work with gdscript
+" -----------
+
+" Enable ALE auto completion globally
+let g:ale_completion_enabled = 1
+
+" Allow ALE to autoimport completion entries from LSP servers
+let g:ale_completion_autoimport = 1
+
+" Resister LSP server for Godot:
+call ale#linter#Define('gdscript', {
+			\	'name': 'godot',
+			\	'lsp': 'socket',
+			\	'address': '127.0.0.1:6008',
+			\	'project_root': 'project.godot',
+			\})
+

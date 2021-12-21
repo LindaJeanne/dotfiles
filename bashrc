@@ -94,6 +94,8 @@ alias pkexec='pkexec env DISPLAY=:0 XAUTHORITY=/home/lindajeanne/.Xauthority'
 
 alias pingg='ping 8.8.8.8'
 
+alias t='todo.sh'
+
 # ========================================
 # rclone
 # ========================================
