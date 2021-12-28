@@ -3,6 +3,28 @@
   tab_position = bottom
   title_transmit_bg_color = "#75507b"
 [keybindings]
+[profiles]
+  [[default]]
+    background_color = "#373737"
+    background_darkness = 0.8
+    cursor_shape = ibeam
+    cursor_color = "#ededed"
+    font = Fantasque Sans Mono 16
+    foreground_color = "#ededed"
+    scrollback_infinite = True
+    palette = "#505152:#b63f53:#519978:#b27b42:#5c95b3:#75507b:#83a6a7:#a4a6a7:#7c707e:#e8909b:#9edcbb:#dcc58f:#a7c8d4:#ad7fa8:#53c5c5:#e8e6e4"
+    use_system_font = False
+    copy_on_selection = True
+  [[quaketerm]]
+    visible_bell = True
+    icon_bell = False
+    background_darkness = 0.74
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = Nimbus Mono L 14
+    show_titlebar = False
+    palette = "#505152:#b63f53:#519978:#b27b42:#5c95b3:#75507b:#83a6a7:#a4a6a7:#7c707e:#e8909b:#9edcbb:#dcc58f:#a7c8d4:#ad7fa8:#46c1c1:#e8e6e4"
+    use_system_font = False
 [layouts]
   [[default]]
     [[[child1]]]
@@ -64,24 +86,3 @@
       profile = default
       type = Terminal
 [plugins]
-[profiles]
-  [[default]]
-    background_color = "#373737"
-    background_darkness = 0.8
-    copy_on_selection = True
-    cursor_color = "#ededed"
-    cursor_shape = ibeam
-    font = Fantasque Sans Mono 16
-    foreground_color = "#ededed"
-    palette = "#505152:#b63f53:#519978:#b27b42:#5c95b3:#75507b:#83a6a7:#a4a6a7:#7c707e:#e8909b:#9edcbb:#dcc58f:#a7c8d4:#ad7fa8:#53c5c5:#e8e6e4"
-    scrollback_infinite = True
-    use_system_font = False
-  [[quaketerm]]
-    background_darkness = 0.74
-    background_type = transparent
-    font = Nimbus Mono L 14
-    icon_bell = False
-    palette = "#505152:#b63f53:#519978:#b27b42:#5c95b3:#75507b:#83a6a7:#a4a6a7:#7c707e:#e8909b:#9edcbb:#dcc58f:#a7c8d4:#ad7fa8:#46c1c1:#e8e6e4"
-    show_titlebar = False
-    use_system_font = False
-    visible_bell = True
